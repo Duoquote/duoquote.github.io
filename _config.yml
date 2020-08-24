@@ -5,7 +5,7 @@ keywords: javascript, python, development, developer, duoquote, guvendegirmenci,
 author: Güven Değirmenci
 language: tr
 timezone: ''
-url: 'http://blog.guvendegirmenci.com'
+url: 'https://blog.guvendegirmenci.com'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
