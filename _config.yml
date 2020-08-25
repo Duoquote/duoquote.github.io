@@ -61,9 +61,11 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
-deploy:
-  type: ''
 algolia:
   applicationID: I24ZRHXA68
   indexName: blog_yeni
   apiKey: c4ea7195624c086125237b973a9f437e
+deploy:
+  type: git
+  repo: https://github.com/Duoquote/duoquote.github.io
+  branch: master

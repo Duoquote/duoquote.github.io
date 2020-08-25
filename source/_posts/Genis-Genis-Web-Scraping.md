@@ -171,6 +171,8 @@ print(sayfa.findAll("a", {"class": "nav-link"}))
 # olan elementleri bul.
 print(sayfa.find("a", {"href": "https://stackoverflow.com/story/duoquote"}))
 ```
+Örnekte yazdığım `find` ve `findAll` metodları gayet klasiktir. Bunların dışında SoupSieve denen library sayesinde BeautifulSoup bizlere javascriptteki `querySelector` komutunda kullandığımız syntax'ı kullanmamızı sağlıyor. Burada detaya pek giremedim, sonuçta kendisi bir web standardıdır. Daha detaylı bilgi için [buraya](https://facelessuser.github.io/soupsieve/) göz atabilirsiniz.
+
 #### Bir adım ileri, RegEx örneği.
 Yazılım dünyasında en sevdiğim şey, RegEx. RegEx, uzun adıyla Regular Expression, yazdığınız kurallar ile yazı içerisinde o kurallara uyan kısımları aramanıza yarar. RegEx ile bir element arayacak olsaydık;
 
