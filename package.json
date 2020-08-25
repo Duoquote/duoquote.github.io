@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo clean && hexo algolia && hexo generate && cp -r public/* /k/public/duoquote/",
+    "build": "hexo clean && hexo algolia && hexo generate && cp -r public/* /k/public/duoquote/ && cp ./CNAME public/",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
