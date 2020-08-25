@@ -1,6 +1,7 @@
 title: Web Scraping Nasıl Yapılır?
 author: Güven Değirmenci
 date: 2020-08-09 16:46:42
+thumbnail: /gallery/thumbnails/web-scraping@0,75x.jpg
 tags:
 ---
 Web Scraping, her ne kadar basit gibi gözükse de, korkunç birçok tarafı vardır. Birbirinden farklı birçok websitesi, birçok farklı teknoloji var. Bu paylaşımda elimden geldiğince Web Scraping konusunu sizlere aktarmaya çalışacağım.
