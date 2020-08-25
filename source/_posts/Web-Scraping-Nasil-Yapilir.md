@@ -1,9 +1,9 @@
-title: Geniş Geniş Web Scraping
+title: Web Scraping Nasıl Yapılır?
 author: Güven Değirmenci
 date: 2020-08-09 16:46:42
 tags:
 ---
-Web Scraping, her ne kadar basit gibi gözükse de, korkunç birçok tarafı vardır. Birbirinden farklı birçok websitesi, birçok farklı teknoloji var. Bu paylaşımda elimden geldiğince Web Scraping konusunu detaylı bir biçimde anlatmaya çalışacağım. Nerelerde hangi aletler kullanılabilir, normal bir kullanıcı nasıl taklit edilir, sayfalardan gelen verileri anlamak, değişkenleri tespit etmek, gelen veriyi derlemek ve kullanışlı hale getirmek gibi birçok konuya değineceğim.
+Web Scraping, her ne kadar basit gibi gözükse de, korkunç birçok tarafı vardır. Birbirinden farklı birçok websitesi, birçok farklı teknoloji var. Bu paylaşımda elimden geldiğince Web Scraping konusunu sizlere aktarmaya çalışacağım.
 
 # Web Scraping nedir?
 
@@ -256,7 +256,7 @@ for div in divElems:
     # geçerlidir, şu anda bulunduğu elementin alt elementini aradığımız için
     # "./" kullanarak o elementten devam etmesini sağlayabiliriz.
     div.xpath("./h1")
-    
+
     # `.text` kullanarak elementtin içine yazılı olan veriyi alabiliriz.
     # Bunu yaparken yine [0] ile bulunan ilk elementi seçmeyi unutmayın.
     print(div.xpath("./h1")[0].text)
