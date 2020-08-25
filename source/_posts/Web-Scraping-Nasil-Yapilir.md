@@ -146,6 +146,9 @@ data = requests.get("https://guvendegirmenci.com")
 
 sayfa = BeautifulSoup(data.text, "html")
 
+# Ekrana düzgün bir şekilde printlemeye yarar.
+print(sayfa.prettify())
+
 # <title> tagına sahip olan ilk elementini bul.
 print(sayfa.find("title"))
 
@@ -170,6 +173,15 @@ print(sayfa.findAll("a", {"class": "nav-link"}))
 # <a> tagına sahip olup "href" değeri "https://stackoverflow.com/story/duoquote"
 # olan elementleri bul.
 print(sayfa.find("a", {"href": "https://stackoverflow.com/story/duoquote"}))
+
+# Sayfadaki tüm <strong> elementlerinin içinde bulunan <a> elementlerini bulur.
+print(sayfa.select("strong > a"))
+
+# Sayfadaki <ul> elementlerinin içlerinde bulunan `nav-item` class'ına sahip elementleri bulur.
+print(sayfa.select("ul > li.nav-item"))
+
+# Sayfadaki tüm `data-fill` attribute değerine sahip olan elementleri bulur.
+print(sayfa.select("a[data-fill]"))
 ```
 Örnekte yazdığım `find` ve `findAll` metodları gayet klasiktir. Bunların dışında SoupSieve denen library sayesinde BeautifulSoup bizlere javascriptteki `querySelector` komutunda kullandığımız syntax'ı kullanmamızı sağlıyor. Burada detaya pek giremedim, sonuçta kendisi bir web standardıdır. Daha detaylı bilgi için [buraya](https://facelessuser.github.io/soupsieve/) göz atabilirsiniz.
 
